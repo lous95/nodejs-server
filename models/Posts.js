@@ -3,21 +3,29 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const UsersSchema = new Schema({
-    name : {
-        type : String,
-        required : true
-    },
-    email : {
+    name: {
         type: String,
         required: true
     },
-    age : {
+    email: {
+        type: String,
+        required: true
+    },
+    age: {
         type: Number,
         required: true
     },
-    date : {
+    date: {
         type: Date,
         default: Date.now
+    },
+    country: {
+        type: String,
+        required: true
+    },
+    gender: {
+        type: String,
+        required: true
     }
 })
 
